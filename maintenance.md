@@ -14,11 +14,13 @@ This runbook captures the steps that should be followed when performing regular 
     * when the maintenance period will start
     * how long you expect it to take
     * when you expect the service to be available again
-4. Do the thing!
-5. If the thing is taking longer than you thought:
+4. Backup the ZFS volumes
+    * run `sudo /home/novix/zfs/run-snap-create`
+5. Do the thing!
+6. If the thing is taking longer than you thought:
     * update [#hachyderm-infra](https://discord.com/channels/858148454953254943/970021502164557876)
     * alert [#hachyderm-mods](https://discord.com/channels/858148454953254943/970025957404581958) so they can field any user questions
-6. When the thing is done, update [#hachyderm-infra](https://discord.com/channels/858148454953254943/970021502164557876). Include:
+7. When the thing is done, update [#hachyderm-infra](https://discord.com/channels/858148454953254943/970021502164557876). Include:
     * what you did
     * if anything unexpected came up
-7. _maybe.. i'm not sure how this works_. Remove the [announcement](https://hachyderm.io/admin/announcements) to users.
+8. _maybe.. i'm not sure how this works_. Remove the [announcement](https://hachyderm.io/admin/announcements) to users.
