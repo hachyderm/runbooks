@@ -1,6 +1,6 @@
 # Runbook: Maintenance
 
-This runbook captures the steps that should be followed when performing regular maintenance.
+This runbook captures the steps that should be followed when performing regular maintenance that will take the service down partially or entirely for some period of time.
 
 ## Steps
 
