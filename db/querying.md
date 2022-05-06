@@ -2,6 +2,17 @@
 
 As an administrator, sometimes you'll need to query the database directly to do your job. In this doc, we'll stash our collective knowledge about working with the database.
 
+## Mastodon Schema
+
+The best schema reference I've found is in the main Mastodon repo under the [Active Record `schema.rb`](https://github.com/mastodon/mastodon/blob/main/db/schema.rb).
+
+General patterns:
+
+- `bigints` for most ID fields.
+- tables that have a unique ID name it `id` (like `accounts.id`).
+- composite tables like `accounts_tags` (mapping accounts to tags) generally do not have a surrogate primary key ID, instead, they have a composite unique index on the thing that uniquely defines a row like `account_id` + `tag_id`.
+- some tables don't have a unique, numeric ID like `custom_emoji_categories` and just have a unique index on something like `name`.
+
 ## Working with pSQL
 
 ### Connecting
