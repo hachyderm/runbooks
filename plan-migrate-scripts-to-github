@@ -13,17 +13,20 @@ Plan:
 2.  [ ] Take a ZFS snapshot
 3.  [ ] Checkout repository to `/opt/scripts`
 4.  [ ] Set permissions to root:root 755
-5.  [ ] Copy `/home/novix/zfs` to `/opt/scripts/zfs`
-6.  [ ] Copy /var/lib/mastodon/run-* to `/opt/scripts/mastodon`
+5.  [ ] Copy `/home/novix/zfs` to `/opt/scripts/bin` directory and prefixed with `zfs-
+6.  [ ] Set permissions for each script to `-x` (aka remove executable)
+6.  [ ] Copy /var/lib/mastodon/run-* to `/opt/scripts/bin` directory and prefixed with `mastodon-`
 7.  [ ] Submit each script family as a set of pull requests. e.g. zfs, mastodon
+
+## Normalize script configuration
+The scripts should be uniform and created so we can run them from `$PATH` and have the appropriate configuration to execute.
+
+Any destructive scripts will require user interaction with the user approving the execution. (no more lost pancakes!)
+
+For each script:
+1.  [ ] Normalize the script to run from the path
+2.  [ ] Set +x on the script
+3.  [ ] Submit a PR for review.
 
 ## Create README describing how the process will work and describing what is linked
 1.  [ ] Fill the README.md and submit as a PR.
-
-## Once scripts are in the repository
-
-The intention is to swap each script with a softlink.
-
-e.g. `/var/lib/mastodon/run-script` would be softlinked to `/opt/scripts/mastodon`
-
-Will populate the path soon.
