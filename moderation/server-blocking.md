@@ -8,7 +8,7 @@ We are committed to maintaining a safe space for our users and moderators. As su
 
 ## Steps
 
-1. If the suggester is a community member, inform them that you are investigating the 
+1. If the suggester is a community member, inform them that you have seen the suggestion and are investigating.
 2. Investigate the suggestion.
   * This does *not* require the moderator to navigate to the instance in question: moderator safety is _also_ a priority.
   * Is the suggester a known community member in good standing?
@@ -32,4 +32,4 @@ We are committed to maintaining a safe space for our users and moderators. As su
      * For silences, put "Spam" or "Bot Activity".
   9. Click "Create Block"
   10. Communicate to the suggester that you've taken action, and what action you've taken.
-  11. Communicate to the moderation team that you've taken action, what action you've taken, and the reason.
+  11. Post in the `#🐘-hachyderm-mods` channel on discord that you've taken action, what action you've taken, and the reason.
